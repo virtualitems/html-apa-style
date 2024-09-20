@@ -148,6 +148,7 @@ p {
 }
 
 .footnote {
+  line-height: 1;
   font-size: 8pt;
 }
 
@@ -161,5 +162,5 @@ table {
 table th,
 table td {
   padding: 0.5rem;
-  line-height: 1rem;
+  line-height: 1;
 }
