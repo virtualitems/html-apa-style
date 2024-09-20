@@ -20,6 +20,10 @@ body {
   font-size: 12pt;
 }
 
+hr {
+  margin: 1in 0;
+}
+
 /* PAGE HEADER */
 
 header {
@@ -130,14 +134,14 @@ p {
 #title-page .author-note {
   display: block;
   margin: 0;
-  margin-top: 4em;
+  margin-top: 4rem;
   text-align: center;
   font-weight: bold;
 }
 
 #title-page .title-element {
   display: block;
-  margin-top: 1em;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -154,6 +158,6 @@ table {
 
 table th,
 table td {
-  padding: 0.5em;
-  line-height: 1em;
+  padding: 0.5rem;
+  line-height: 1rem;
 }
