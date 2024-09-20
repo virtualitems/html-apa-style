@@ -59,6 +59,8 @@ body {
 
 hr {
   margin: 1in 0;
+  border: 2px solid #000;
+  width: 100%;
 }
 
 @media print {
@@ -70,7 +72,7 @@ hr {
 
   hr {
     border: none;
-    page-break-before: always;
+    page-break-after: always;
   }
 
 }
@@ -79,6 +81,12 @@ hr {
 
 section {
   position: relative;
+  page-break-inside: avoid;
+  page-break-after: always;
+}
+
+section:not(:first-child) {
+  margin-top: 1in;
 }
 
 /* PAGE HEADER */
@@ -95,6 +103,21 @@ header:first-child {
 }
 
 /* PAGE FOOTER */
+
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid #000;
+}
+
+footer sup {
+  margin-right: 1px;
+}
+
+footer small {
+  text-indent: 0.5in;
+  line-height: 1.5;
+  font-size: 10pt;
+}
 
 /* FONTS */
 
@@ -185,11 +208,6 @@ h6 {
 p {
   text-indent: 0.5in;
   text-align: left;
-}
-
-small {
-  line-height: 1;
-  font-size: 8pt;
 }
 
 /* TABLES */
