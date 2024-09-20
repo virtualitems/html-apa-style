@@ -222,3 +222,98 @@ table td {
 /* TABLES PAGE */
 /* FIGURES PAGE */
 /* APPENDICES PAGE */
+
+/* BREAK POINT 768px */
+
+@media screen and (min-width: 768px) {
+
+  body {
+    padding: 1in;
+    width: 90%;
+  }
+
+  /* PAGE FOOTER */
+
+  footer small {
+    text-indent: 0.5in;
+    font-size: 10pt;
+  }
+
+  /* BLOCKQUOTES */
+
+  blockquote {
+    margin-left: 0.5in;
+    border-left: unset;
+  }
+
+  blockquote+blockquote {
+    text-indent: 0.5in;
+  }
+
+  /* TEXTS */
+
+  h4 {
+    text-indent: 0.5in;
+  }
+
+  h5,
+  h6 {
+    text-indent: 0.5in;
+  }
+
+  p {
+    text-indent: 0.5in;
+  }
+
+}
+
+/* BREAK POINT 992px */
+
+@media screen and (min-width: 992px) {
+
+  body {
+    width: 75%;
+  }
+
+}
+
+/* BREAK POINT 1200px */
+
+@media screen and (min-width: 1200px) {
+
+  body {
+    width: 60%;
+  }
+
+}
+
+/* BREAK POINT 1400px */
+
+@media screen and (min-width: 1400px) {
+
+  body {
+    width: 50%;
+  }
+
+}
+
+/* PRINT */
+
+@media print {
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: A6;
+  }
+
+}
