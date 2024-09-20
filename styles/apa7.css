@@ -34,51 +34,6 @@ body {
   font-size: 12pt;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    padding: 1in;
-    width: 90%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  body {
-    width: 75%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  body {
-    width: 50%;
-  }
-}
-
-
-@media print {
-
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  section {
-    margin: 0;
-    padding: 0;
-  }
-
-  @page {
-    size: A6;
-  }
-
-}
-
 /* PAGE SECTION */
 
 section {
