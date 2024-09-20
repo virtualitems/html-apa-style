@@ -91,6 +91,12 @@ section:not(:first-child) {
   margin-top: 1in;
 }
 
+/* PAGE DIVISION */
+
+div {
+  margin-top: 1rem;
+}
+
 /* PAGE HEADER */
 
 header {
@@ -217,6 +223,10 @@ p {
   margin-top: 1rem;
   text-align: left;
   text-indent: 0.5in;
+}
+
+code {
+  font-family: monospace;
 }
 
 /* TABLES */
