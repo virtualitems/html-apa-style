@@ -176,13 +176,6 @@ h6 {
   font-style: italic;
 }
 
-strong {
-  display: block;
-  margin: 4rem 0 0 0;
-  text-align: center;
-  font-weight: bold;
-}
-
 p {
   margin-top: 1rem;
   text-indent: 0.15in;
@@ -190,14 +183,6 @@ p {
 
 code {
   font-family: monospace;
-}
-
-cite {
-  display: block;
-  margin: 0;
-  padding-left: 0.5in;
-  text-indent: -0.5in;
-  font-style: normal;
 }
 
 /* TABLES */
@@ -215,15 +200,32 @@ table td {
 
 /* TITLE PAGE */
 
-#title-page .title-element {
+strong {
+  display: block;
+  margin: 4rem 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+em {
   display: block;
   margin-top: 1rem;
   text-align: center;
+  font-style: unset;
 }
 
 /* ABSTRACT PAGE */
 /* TEXT PAGE */
 /* REFERENCES PAGE */
+
+cite {
+  display: block;
+  margin: 0;
+  padding-left: 0.5in;
+  text-indent: -0.5in;
+  font-style: normal;
+}
+
 /* FOOTNOTES PAGE */
 /* TABLES PAGE */
 /* FIGURES PAGE */
