@@ -1,3 +1,11 @@
+:root {
+  --break-sm: 576px;
+  --break-md: 768px;
+  --break-lg: 992px;
+  --break-xl: 1200px;
+  --break-xxl: 1400px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,13 +20,20 @@ body {
 
 body {
   background-color: #fbfbfb;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
-  padding: 1in;
+  padding: 0.2in;
   text-align: left;
   line-height: 2;
   font-family: serif;
   font-size: 12pt;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    width: 50%;
+    padding: 1in;
+  }
 }
 
 hr {
@@ -126,14 +141,14 @@ h6 {
 }
 
 p {
-  margin-left: 0.5in;
+  text-indent: 0.5in;
   text-align: left;
 }
 
 /* TITLE PAGE */
 
 #title-page .paper-title,
-#title-page .author-note {
+#title-page .author-note h2 {
   display: block;
   margin: 0;
   margin-top: 4rem;
