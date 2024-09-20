@@ -49,8 +49,7 @@ header {
   justify-content: space-between;
 }
 
-header .running-head,
-header .page-number {
+header:first-child {
   text-transform: uppercase;
 }
 
