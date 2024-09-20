@@ -32,6 +32,7 @@ body {
   line-height: var(--line-height);
   font-family: serif;
   font-size: 12pt;
+  counter-reset: section;
 }
 
 /* PAGE SECTION */
@@ -63,6 +64,11 @@ header {
 
 header:first-child {
   text-transform: uppercase;
+}
+
+header::after {
+  counter-increment: section;
+  content: counter(section);
 }
 
 /* PAGE FOOTER */
