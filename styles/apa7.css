@@ -12,17 +12,16 @@
   padding: 0;
 }
 
-html,
-body {
+html {
   background-color: #323639;
   width: 100%;
 }
 
 body {
-  background-color: #fbfbfb;
-  width: 100%;
   margin: 0 auto;
+  background-color: #fbfbfb;
   padding: 0.2in;
+  width: 100%;
   text-align: left;
   line-height: 2;
   font-family: serif;
@@ -31,13 +30,27 @@ body {
 
 @media screen and (min-width: 576px) {
   body {
-    width: 50%;
     padding: 1in;
+    width: 50%;
   }
 }
 
 hr {
   margin: 1in 0;
+}
+
+@media print {
+
+  body {
+    padding: 1in;
+    width: 100%;
+  }
+
+  hr {
+    page-break-before: always;
+    border: none;
+  }
+
 }
 
 /* PAGE HEADER */
