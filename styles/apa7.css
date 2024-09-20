@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
   background-color: #fbfbfb;
   cursor: text;
-  padding: 0.2in;
+  padding: 0.3in;
   width: 100%;
   min-height: 100vh;
   text-align: left;
@@ -73,7 +73,7 @@ footer {
 }
 
 footer small {
-  text-indent: 0.5in;
+  text-indent: 0.15in;
   font-size: 10pt;
 }
 
@@ -81,11 +81,12 @@ footer small {
 
 blockquote {
   margin-top: 1rem;
-  margin-left: 0.5in;
+  padding-left: 0.15in;
+  border-left: 4px solid #aaa;
 }
 
-blockquote + blockquote {
-  text-indent: 0.5in;
+blockquote+blockquote {
+  text-indent: 0.15in;
 }
 
 /* FONTS */
@@ -158,7 +159,7 @@ h3 {
 
 h4 {
   margin: 0;
-  margin-left: 0.5in;
+  text-indent: 0.15in;
   text-align: left;
   font-size: inherit;
   font-weight: bold;
@@ -167,7 +168,7 @@ h4 {
 h5,
 h6 {
   margin: 0;
-  margin-left: 0.5in;
+  text-indent: 0.15in;
   text-align: left;
   font-size: inherit;
   font-weight: bold;
@@ -177,7 +178,7 @@ h6 {
 p {
   margin-top: 1rem;
   text-align: left;
-  text-indent: 0.5in;
+  text-indent: 0.15in;
 }
 
 code {
