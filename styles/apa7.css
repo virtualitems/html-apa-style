@@ -13,12 +13,14 @@
 }
 
 html {
+  position: relative;
   background-color: #323639;
   width: 100%;
   min-height: 100vh;
 }
 
 body {
+  position: relative;
   margin: 0 auto;
   background-color: #fbfbfb;
   padding: 0.2in;
@@ -67,24 +69,32 @@ hr {
   }
 
   hr {
-    page-break-before: always;
     border: none;
+    page-break-before: always;
   }
 
+}
+
+/* PAGE SECTION */
+
+section {
+  position: relative;
 }
 
 /* PAGE HEADER */
 
 header {
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 header:first-child {
   text-transform: uppercase;
 }
+
+/* PAGE FOOTER */
 
 /* FONTS */
 
