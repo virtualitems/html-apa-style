@@ -6,11 +6,12 @@
 
 html,
 body {
+  background-color: #323639;
   width: 100%;
-  height: 100%;
 }
 
 body {
+  background-color: #fbfbfb;
   width: 50%;
   margin: 0 auto;
   padding: 1in;
@@ -21,12 +22,17 @@ body {
 }
 
 hr {
-  margin: 1in 0;
+  margin-bottom: 1in;
+}
+
+section {
+  padding-bottom: 1in;
 }
 
 /* PAGE HEADER */
 
 header {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
