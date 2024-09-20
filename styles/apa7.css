@@ -177,6 +177,24 @@ p {
   text-align: left;
 }
 
+small {
+  line-height: 1;
+  font-size: 8pt;
+}
+
+/* TABLES */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+  line-height: 1;
+}
+
 /* TITLE PAGE */
 
 #title-page .paper-title,
@@ -194,20 +212,10 @@ p {
   text-align: center;
 }
 
-.footnote {
-  line-height: 1;
-  font-size: 8pt;
-}
-
-/* TABLES */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table th,
-table td {
-  padding: 0.5rem;
-  line-height: 1;
-}
+/* ABSTRACT PAGE */
+/* TEXT PAGE */
+/* REFERENCES PAGE */
+/* FOOTNOTES PAGE */
+/* TABLES PAGE */
+/* FIGURES PAGE */
+/* APPENDICES PAGE */
