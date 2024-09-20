@@ -116,6 +116,17 @@ footer small {
   font-size: 10pt;
 }
 
+/* BLOCKQUOTES */
+
+blockquote {
+  margin-top: 1rem;
+  margin-left: 0.5in;
+}
+
+blockquote + blockquote {
+  text-indent: 0.5in;
+}
+
 /* FONTS */
 
 .font-calibri {
