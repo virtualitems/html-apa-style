@@ -15,6 +15,7 @@
 html {
   background-color: #323639;
   width: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   background-color: #fbfbfb;
   padding: 0.2in;
   width: 100%;
+  min-height: 100vh;
   text-align: left;
   line-height: 2;
   font-family: serif;
@@ -31,6 +33,24 @@ body {
 @media screen and (min-width: 768px) {
   body {
     padding: 1in;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
     width: 50%;
   }
 }
