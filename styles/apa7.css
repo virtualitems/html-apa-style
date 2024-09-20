@@ -59,22 +59,22 @@ body {
   }
 }
 
-hr {
-  margin: 1in 0;
-  border: 2px solid #000;
-  width: 100%;
-}
 
 @media print {
 
   body {
-    padding: 1in;
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
 
-  hr {
-    border: none;
-    page-break-after: always;
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: A6;
   }
 
 }
