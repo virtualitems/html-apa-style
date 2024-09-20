@@ -44,7 +44,7 @@ section {
 }
 
 section:not(:first-child) {
-  margin-top: 1in;
+  margin-top: 2in;
 }
 
 /* PAGE DIVISION */
