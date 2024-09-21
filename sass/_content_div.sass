@@ -1,6 +1,9 @@
 @import '_variables.sass'
 
-div
+%block-relative
   display: block
   position: relative
-  margin-top: 1rem
+
+div
+  @extend %block-relative
+  margin-top: $content-margin-top

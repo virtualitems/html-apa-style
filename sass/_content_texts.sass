@@ -1,4 +1,5 @@
 @import '_variables.sass'
+@import '_content_div.sass'
 
 // Fonts
 
@@ -39,32 +40,51 @@
 
 // Headings
 
-h1, h2, h3, h4, h5, h6
-  margin: 1rem 0 0 0
+%heading
+  margin-top: $content-margin-top
+  margin-right: 0
+  margin-bottom: 0
+  margin-left: 0
   text-align: left
   font-size: inherit
   font-weight: bold
 
 h1
+  @extend %block-relative
+  @extend %heading
   text-align: center
 
+h2
+  @extend %block-relative
+  @extend %heading
+
 h3
+  @extend %block-relative
+  @extend %heading
   font-style: italic
 
 h4
+  @extend %heading
   display: inline-block
-  text-indent: 0.15in
+  position: relative
+  text-indent: $content-indent
 
 h5, h6
+  @extend %heading
   display: inline-block
-  text-indent: 0.15in
+  position: relative
+  text-indent: $content-indent
   font-style: italic
 
 // Paragraphs
 
 p
-  margin-top: 1rem
-  text-indent: 0.15in
+  @extend div
+  text-indent: $content-indent
 
 code
   font-family: monospace
+
+span
+  display: inline
+  position: relative

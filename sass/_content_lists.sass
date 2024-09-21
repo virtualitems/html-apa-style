@@ -1,5 +1,7 @@
 @import '_variables.sass'
+@import '_content_div.sass'
 
 ul, ol
-  margin-top: 1rem
-  margin-left: 0.15in
+  @extend %block-relative
+  margin-top: $content-margin-top
+  margin-left: $content-indent

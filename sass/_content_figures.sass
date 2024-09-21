@@ -1,7 +1,13 @@
 @import '_variables.sass'
+@import '_content_div.sass'
+
+$figure-padding-x: 1rem
 
 figure
-  margin-top: 1rem
+  @extend %block-relative
+  margin-top: $content-margin-top
+  padding-right: $figure-padding-x
+  padding-left: $figure-padding-x
   max-width: 100%
   text-align: center
 

@@ -1,9 +1,11 @@
 @import '_variables.sass'
+@import '_content_div.sass'
 
 blockquote
-  margin-top: 1rem
-  padding-left: 0.15in
+  @extend %block-relative
+  margin-top: $content-margin-top
+  padding-left: $content-indent
   border-left: 4px solid #aaa
 
   + blockquote
-    text-indent: 0.15in
+    text-indent: $content-indent
