@@ -3,9 +3,9 @@
 
 blockquote
   @extend %block-relative
-  margin-top: $content-margin-top
-  padding-left: $content-indent
+  margin-top: var(--content-margin-top)
+  padding-left: var(--content-indent)
   border-left: 4px solid #aaa
 
   + blockquote
-    text-indent: $content-indent
+    text-indent: var(--content-indent)

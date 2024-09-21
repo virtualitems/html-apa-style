@@ -1,7 +1,20 @@
 @import '_variables.sass'
 @import '_content_div.sass'
 
-$section-margin-top: 2in//1in
+:root
+  --section-margin-top: 1in
+
+  @media screen and (min-width: $break-md)
+    --section-margin-top: 2in
+
+  @media screen and (min-width: $break-lg)
+    --section-margin-top: 2in
+
+  @media screen and (min-width: $break-xl)
+    --section-margin-top: 2in
+
+  @media screen and (min-width: $break-xxl)
+    --section-margin-top: 2in
 
 section
   @extend %block-relative
@@ -9,4 +22,4 @@ section
   page-break-inside: avoid
 
   &:not(:first-child)
-    margin-top: $section-margin-top // 2in
+    margin-top: var(--section-margin-top)

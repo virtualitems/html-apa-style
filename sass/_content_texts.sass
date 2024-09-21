@@ -41,7 +41,7 @@
 // Headings
 
 %heading
-  margin-top: $content-margin-top
+  margin-top: var(--content-margin-top)
   margin-right: 0
   margin-bottom: 0
   margin-left: 0
@@ -67,20 +67,20 @@ h4
   @extend %heading
   display: inline-block
   position: relative
-  text-indent: $content-indent
+  text-indent: var(--content-indent)
 
 h5, h6
   @extend %heading
   display: inline-block
   position: relative
-  text-indent: $content-indent
+  text-indent: var(--content-indent)
   font-style: italic
 
 // Paragraphs
 
 p
   @extend div
-  text-indent: $content-indent
+  text-indent: var(--content-indent)
 
 code
   font-family: monospace

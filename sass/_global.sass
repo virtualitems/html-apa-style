@@ -1,5 +1,48 @@
 @import '_variables.sass'
 
+:root
+  // html
+  --html-background-color: #323639
+  // body
+  --body-background-color: #ffffff
+  --body-padding: 0.3in
+  --body-width: 100%
+  // text
+  --line-height: 2
+  --font-family: serif
+  --font-size: 12pt
+  // contents
+  --content-margin-top: 1rem
+  --content-indent: 0.25in
+
+  @media screen and (min-width: $break-md)
+    // body
+    --body-padding: 1in
+    --body-width: 90%
+    // contents
+    --content-indent: 0.5in
+
+  @media screen and (min-width: $break-lg)
+    // body
+    --body-padding: 1in
+    --body-width: 75%
+    // contents
+    --content-indent: 0.5in
+
+  @media screen and (min-width: $break-xl)
+    // body
+    --body-padding: 1in
+    --body-width: 60%
+    // contents
+    --content-indent: 0.5in
+
+  @media screen and (min-width: $break-xxl)
+    // body
+    --body-padding: 1in
+    --body-width: 50%
+    // contents
+    --content-indent: 0.5in
+
 *
   box-sizing: border-box
   margin: 0
@@ -7,20 +50,20 @@
 
 html
   position: relative
-  background-color: $html-color
+  background-color: var(--html-background-color)
   width: 100%
   min-height: 100vh
 
 body
   position: relative
   margin: 0 auto
-  background-color: $body-color
+  background-color: var(--body-background-color)
   cursor: text
-  padding: $body-padding
-  width: $body-width
+  padding: var(--body-padding)
+  width: var(--body-width)
   min-height: 100vh
   text-align: left
-  line-height: $line-height
-  font-family: $font-family
-  font-size: $font-size
+  line-height: var(--line-height)
+  font-family: var(--font-family)
+  font-size: var(--font-size)
   counter-reset: section
