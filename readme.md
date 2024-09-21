@@ -1,1 +1,1 @@
-# APA Style in HTML and CSS
+# APA Style with HTML and CSS
