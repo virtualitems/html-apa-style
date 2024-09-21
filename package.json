@@ -1,0 +1,17 @@
+{
+  "name": "html-apa-style",
+  "version": "1.0.0",
+  "description": "APA Style with HTML and CSS",
+  "main": "main.js",
+  "scripts": {
+    "build": "sass sass/main.sass styles/main.css --no-source-map --style=compressed"
+  },
+  "author": {
+    "name": "Virtual Items",
+    "url": "https://github.com/virtualitems"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.79.3"
+  }
+}
