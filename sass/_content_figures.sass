@@ -1,13 +1,26 @@
 @import '_variables.sass'
 @import '_content_divs.sass'
 
-$figure-padding-x: 1rem
+:root
+  --figure-padding-x: 0rem
+
+  @media screen and (min-width: $break-md)
+    --figure-padding-x: 1rem
+
+  @media screen and (min-width: $break-lg)
+    --figure-padding-x: 1rem
+
+  @media screen and (min-width: $break-xl)
+    --figure-padding-x: 1rem
+
+  @media screen and (min-width: $break-xxl)
+    --figure-padding-x: 1rem
 
 figure
   @extend %block-relative
   margin-top: var(--content-margin-top)
-  padding-right: $figure-padding-x
-  padding-left: $figure-padding-x
+  padding-right: var(--figure-padding-x)
+  padding-left: var(--figure-padding-x)
   max-width: 100%
   text-align: center
 
