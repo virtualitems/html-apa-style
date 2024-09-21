@@ -1,20 +1,19 @@
 @import '_variables.sass'
 @import '_content_div.sass'
 
-$footer-margin-top: 4rem
-
-$small-margin-top: 0.5rem
-$small-line-height: 1.5
-$small-font-size: 10pt
+:root
+  --small-margin-top: 0.5rem
+  --small-line-height: 1.5
+  --small-font-size: 10pt
 
 footer
   @extend %block-relative
-  margin-top: $footer-margin-top
+  margin-top: var(--content-large-margin-top)
   border-top: 1px solid #000
 
   small
     @extend %block-relative
-    margin-top: $small-margin-top
+    margin-top: var(--small-margin-top)
     text-indent: var(--content-indent)
-    line-height: $small-line-height
-    font-size: $small-font-size
+    line-height: var(--small-line-height)
+    font-size: var(--small-font-size)
