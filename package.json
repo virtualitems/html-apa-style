@@ -4,7 +4,7 @@
   "description": "APA Style with HTML and CSS",
   "main": "main.js",
   "scripts": {
-    "build": "sass sass/main.sass styles/main.css --no-source-map --style=compressed"
+    "build": "sass sass/main.sass styles/apa7.css --no-source-map --style=compressed"
   },
   "author": {
     "name": "Virtual Items",
