@@ -44,7 +44,7 @@ section {
 }
 
 section:not(:first-child) {
-  margin-top: 2in;
+  margin-top: 1in;
 }
 
 /* PAGE DIVISION */
@@ -203,14 +203,13 @@ table td {
 ul,
 ol {
   margin-top: 1rem;
-  margin-left: 0.5in;
+  margin-left: 0.15in;
 }
 
 /* IMAGES */
 
 figure {
   margin-top: 1rem;
-  padding: 0 1rem;
   max-width: 100%;
   text-align: center;
 }
@@ -220,7 +219,6 @@ img {
 }
 
 figcaption {
-  margin-top: 0.5rem;
   font-size: 10pt;
   font-style: italic;
 }
@@ -267,6 +265,11 @@ cite {
     width: 90%;
   }
 
+  /* PAGE SECTION */
+  section:not(:first-child) {
+    margin-top: 2in;
+  }
+
   /* PAGE FOOTER */
 
   footer small {
@@ -292,6 +295,19 @@ cite {
   h6,
   p {
     text-indent: 0.5in;
+  }
+
+  /* LISTS */
+
+  ul,
+  ol {
+    margin-left: 0.5in;
+  }
+
+  /* IMAGES */
+
+  figure {
+    padding: 0 1rem;
   }
 
 }
