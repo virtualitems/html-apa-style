@@ -198,6 +198,27 @@ table td {
   line-height: calc(var(--line-height) / 2);
 }
 
+/* LISTS */
+
+/* IMAGES */
+
+figure {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 10pt;
+  font-style: italic;
+}
+
 /* TITLE PAGE */
 
 strong {
@@ -260,15 +281,9 @@ cite {
 
   /* TEXTS */
 
-  h4 {
-    text-indent: 0.5in;
-  }
-
+  h4,
   h5,
-  h6 {
-    text-indent: 0.5in;
-  }
-
+  h6,
   p {
     text-indent: 0.5in;
   }
