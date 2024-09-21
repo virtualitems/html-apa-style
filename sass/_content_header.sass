@@ -1,0 +1,14 @@
+@import '_variables.sass'
+
+header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 1rem
+
+  &:first-child
+    text-transform: uppercase
+
+  &::after
+    counter-increment: section
+    content: counter(section)
