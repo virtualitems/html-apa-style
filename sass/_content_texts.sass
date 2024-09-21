@@ -76,10 +76,17 @@ h5, h6
   text-indent: var(--content-indent)
   font-style: italic
 
+strong
+  @extend %block-relative
+  margin-top: var(--content-medium-margin-top)
+  text-align: center
+  font-weight: normal
+
 // Paragraphs
 
 p
-  @extend div
+  @extend %block-relative
+  margin-top: var(--content-margin-top)
   text-indent: var(--content-indent)
 
 code

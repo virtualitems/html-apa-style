@@ -1,14 +1,14 @@
 @import '_variables.sass'
 @import '_content_divs.sass'
 
-strong
-  @extend %block-relative
-  margin-top: var(--content-large-margin-top)
-  text-align: center
-  font-weight: bold
+hgroup
 
-em
-  @extend %block-relative
-  margin-top: var(--content-margin-top)
-  text-align: center
-  font-style: normal
+  h1, h2, h3
+    @extend %block-relative
+    margin-top: var(--content-large-margin-top)
+    text-align: center
+
+  p
+    @extend %block-relative
+    margin-top: var(--content-margin-top)
+    text-indent: 0px

@@ -13,7 +13,8 @@
   --font-size: 12pt
   // contents
   --content-margin-top: 1rem
-  --content-large-margin-top: 4rem
+  --content-medium-margin-top: 1.5rem
+  --content-large-margin-top: 2rem
   --content-indent: 0.25in
 
   @media screen and (min-width: $break-md)
@@ -21,28 +22,21 @@
     --body-padding: 1in
     --body-width: 90%
     // contents
+    --content-medium-margin-top: 2rem
+    --content-large-margin-top: 4rem
     --content-indent: 0.5in
 
   @media screen and (min-width: $break-lg)
     // body
-    --body-padding: 1in
     --body-width: 75%
-    // contents
-    --content-indent: 0.5in
 
   @media screen and (min-width: $break-xl)
     // body
-    --body-padding: 1in
     --body-width: 60%
-    // contents
-    --content-indent: 0.5in
 
   @media screen and (min-width: $break-xxl)
     // body
-    --body-padding: 1in
     --body-width: 50%
-    // contents
-    --content-indent: 0.5in
 
 *
   box-sizing: border-box
