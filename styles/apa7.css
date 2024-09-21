@@ -200,6 +200,12 @@ table td {
 
 /* LISTS */
 
+ul,
+ol {
+  margin-top: 1rem;
+  margin-left: 0.5in;
+}
+
 /* IMAGES */
 
 figure {
