@@ -63,3 +63,18 @@ body
   font-family: var(--font-family)
   font-size: var(--font-size)
   counter-reset: section
+
+section
+  #{$tags-block}
+    display: block
+    position: relative
+    margin-top: var(--content-margin-top)
+
+section
+  #{$tags-block}
+    #{$tags-inline}
+      display: inline
+      margin-top: 0
+
+#{$tags-hidden}
+  display: none
