@@ -64,8 +64,11 @@ body
   font-size: var(--font-size)
   counter-reset: section
 
+#{$tags-block}, #{$tags-inline}, #{$tags-hidden}
+  display: none
+
 section
-  #{$tags-block}
+  #{$tags-block}, #{$tags-inline}
     display: block
     position: relative
     margin-top: var(--content-margin-top)
@@ -75,6 +78,3 @@ section
     #{$tags-inline}
       display: inline
       margin-top: 0
-
-#{$tags-hidden}
-  display: none

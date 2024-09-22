@@ -1,15 +1,13 @@
 @import '_variables.sass'
-@import '_content_divs.sass'
 
-summary
-  @extend %block-relative
+section
 
-  h1, h2, h3
-    @extend %block-relative
-    margin-top: var(--content-large-margin-top)
-    text-align: center
+  summary
 
-  p
-    @extend %block-relative
-    margin-top: var(--content-margin-top)
-    text-indent: 0px
+    h1, h2, h3
+      margin-top: var(--content-large-margin-top)
+      text-align: center
+
+    p
+      margin-top: var(--content-margin-top)
+      text-indent: 0px

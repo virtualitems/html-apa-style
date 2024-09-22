@@ -1,5 +1,4 @@
 @import '_variables.sass'
-@import '_content_divs.sass'
 
 // Headings
 
@@ -12,69 +11,65 @@
   font-size: inherit
   font-weight: bold
 
-h1
-  @extend %block-relative
-  @extend %heading
-  text-align: center
+section
 
-h2
-  @extend %block-relative
-  @extend %heading
+  h1
+    @extend %heading
+    text-align: center
 
-h3
-  @extend %block-relative
-  @extend %heading
-  font-style: italic
+  h2
+    @extend %heading
 
-h4
-  @extend %heading
-  display: inline-block
-  position: relative
-  text-indent: var(--content-indent)
+  h3
+    @extend %heading
+    font-style: italic
 
-h5
-  @extend %heading
-  display: inline-block
-  position: relative
-  text-indent: var(--content-indent)
-  font-style: italic
+  h4
+    @extend %heading
+    display: inline-block
+    position: relative
+    text-indent: var(--content-indent)
 
-strong
-  @extend %block-relative
-  margin-top: var(--content-medium-margin-top)
-  text-align: center
-  font-weight: normal
+  h5
+    @extend %heading
+    display: inline-block
+    position: relative
+    text-indent: var(--content-indent)
+    font-style: italic
 
-// Paragraphs
+  strong
+    margin-top: var(--content-medium-margin-top)
+    text-align: center
+    font-weight: normal
 
-p
-  @extend %block-relative
-  margin-top: var(--content-margin-top)
-  text-indent: var(--content-indent)
+  // Paragraphs
 
-div
   p
+    margin-top: var(--content-margin-top)
+    text-indent: var(--content-indent)
+
+  div
+    p
+      display: inline
+      margin-top: 0
+      text-indent: 0
+
+  hgroup
+    margin-top: var(--content-medium-margin-top)
+    text-indent: var(--content-indent)
+
+    h4, h5, p
+      display: inline
+      margin-top: 0
+      text-indent: 0
+
+  code
+    padding: 0.2rem 0.4rem
+    border-radius: 5px
+    background-color: var(--content-code-background-color)
+    font-family: monospace
+    font-size: 10pt
+
+  span
     display: inline
-    margin-top: 0
-    text-indent: 0
-
-hgroup
-  @extend %block-relative
-  margin-top: var(--content-medium-margin-top)
-  text-indent: var(--content-indent)
-
-  h4, h5, p
-    display: inline
-    margin-top: 0
-    text-indent: 0
-
-code
-  padding: 0.2rem 0.4rem
-  border-radius: 5px
-  background-color: var(--content-code-background-color)
-  font-family: monospace
-  font-size: 10pt
-
-span
-  display: inline
-  position: relative
+    position: relative
